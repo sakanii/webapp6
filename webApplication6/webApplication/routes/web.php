@@ -11,9 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
 Route::get('/search','searchController@index');/*view search page*/
 Route::post('searchAvailability','searchController@searchAvailability');/*check matching and return to reponse of search to see resulst of searching*/
 
